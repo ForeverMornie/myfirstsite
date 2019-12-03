@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="..\720\css\pages.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ray tracing</title>
+    <!-----navbar------>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand mr-5" href="..\720\index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="..\720\index.html">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="..\720\about.html">
+                <i class="far fa-dizzy"></i>
+                About me
+              </a>
+            </li>
+            <!-- dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-comment-dots"></i>
+                Blog
+              </a>
+              <div class="dropdown-menu" id="custom-dropdown-menu">
+                <a class="dropdown-item" href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8">Больше информации</a>
+                <a class="dropdown-item" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F">Источники</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\720\about.html">
+                <i class="fas fa-mobile"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /menu -->
+      </div>
+    </nav>
+  </head>
+  <body>
+    <div class="container">
+
+      <p>Ray Tracing - один из методов геометрической оптики — исследование оптических систем путём отслеживания взаимодействия отдельных лучей с поверхностями. В узком смысле — технология построения изображения трёхмерных моделей в компьютерных программах, при которых отслеживается обратная траектория распространения луча (от экрана к источнику).</p>
+      <p>
+<img  src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/1920px-Ray_trace_diagram.svg.png" width = "400px">
+Трассировка лучей в компьютерных играх — это решение для создания реалистичного освещения, отражений и теней, обеспечивающее более высокий уровень реализма по сравнению с традиционными способами рендеринга. Turing стала первой архитектурой, позволяющей проводить трассировку лучей в реальном времени на GPU.
+
+<p>Достоинства:</p>
+  <p>1)Возможность рендеринга гладких объектов без аппроксимации их полигональными поверхностями (например, треугольниками);</p>
+  <p>2)Вычислительная сложность метода слабо зависит от сложности сцены;</p>
+  <p>3)Высокая алгоритмическая распараллеливаемость вычислений — можно параллельно и независимо трассировать два и более лучей, разделять участки (зоны экрана) для трассирования на разных узлах кластера и т.д;</p>
+  <p>4)Отсечение невидимых поверхностей, перспектива и корректное изменения поля зрения являются логическим следствием алгоритма.</p>
+<p>Недостатки:</p>
+  <p>Серьёзным недостатком метода обратного трассирования является производительность. Метод растеризации и сканирования строк использует когерентность данных, чтобы распределить вычисления между пикселями. В то время как метод трассирования лучей каждый раз начинает процесс определения цвета пикселя заново, рассматривая каждый луч наблюдения в отдельности. Впрочем, это разделение влечёт появление некоторых других преимуществ, таких как возможность трассировать больше лучей, чем предполагалось для устранения контурных неровностей в определённых местах модели. Также это регулирует отражение лучей и эффекты преломления, и в целом — степень фотореалистичности изображения.</p>
+    <a href="..\720\index.html"button type="button" class="btn btn-secondary">Вернуться в меню</button></a>
+    </div>
+
+  </body>
+</html>

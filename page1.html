@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="..\720\css\pages.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>windows</title>
+    <!-----navbar------>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand mr-5" href="..\720\index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="..\720\index.html">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="..\720\about.html">
+                <i class="far fa-dizzy"></i>
+                About me
+              </a>
+            </li>
+            <!-- dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-comment-dots"></i>
+                Blog
+              </a>
+              <div class="dropdown-menu" id="custom-dropdown-menu">
+                <a class="dropdown-item" href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8">Больше информации</a>
+                <a class="dropdown-item" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F">Источники</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\720\about.html">
+                <i class="fas fa-mobile"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /menu -->
+      </div>
+    </nav>
+  </head>
+  <body>
+    <div class="container">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUMAAACcCAMAAADS8jl7AAAAkFBMVEUAd9v///8Abtn///wAed38//3L3fPZ5vYAcNuwze8AdNwAddoAdNsAcdr//v4AdtwAatlUlOEAe9y30/BGkOOYvemhw+wmhN630vAAfNlSl+J9sOnA2fPf6vbs+PoAfN5bm+CHtOuoyOx3qOdgoOLN4fXj8PY1iuGXvuWJt+fX5Pehwe3d6PLH3fHj7fsAa90oc0UzAAADuklEQVR4nO3d61LaQBiA4WRDJGQTQgEREBBRwFPb+7+77m6wDWqWxa0yTN5nRm1n+AHvfMmC5hAEAAAAAAAAAAAAAAAAAAAADdQKApnniciLUz+TsyQz1U6IyfR6NJsvbuSpn885SdXkJaInJsvr0cWvODSiFg2dFGby8snydnWxUfGiKHwV0/CArMjMZmvi7apVAtLQxuzzer3+8no1U5O3342Gdq0iNdvt8G40a+/2eWG3riAN98nMfL+6fxy0F5bJo+EbhXqfF+TldjtV/0wGf+t0LdNHw5LU+7xc9ILh3WVnrXd6qWrYcRu/ZjfsB0W5YGTbe7XazuN/OTIaHiQz8z5PDu8exk+Lt+9SwpCGVnIX73Ks1otSVxXcj/ipbTloSsNs+thpLw6ttTS0EWuT78BKS0MbceHydi+VNKz3hQ0bs6bQ0B8N/dHQn2ND3mNb0NAfDf2xP/RHQ3809OfUMM5oaEFDfzT0R0N/bmsKfwuwoaE/GvqjoT8+L/ujoT+2ZX98Xvbn1rD4zBz2aejbMKShd0PmcF9AQ4u9hnGsD3LtmuNc48rhrrF8t6Y4lG9Ow3VtgyiMYiOM01aQP2xeXubzeVt7Ui6UmTIYDMbjcUdZKSPj+fn58rJ16tf2XWSrSmZpeTRnb4/QB2fnQuuJN5Ik0V9anpffd0790r6PfO/UT+nsFDI1sqzMp75koUg1k7qm+c9nNsvG7A6DYjj98Wo6HA63pStjovSViX5k/nYrPqDXP/Vr+y6WNaUiVQkfXtpHeeEYzqpYrQ/JzCV2FZ+XvRvyO4d3DQUN6zCH/mjoz73h4PDjaGhvyP6wlntD5rCOc8OchnXcfgfL/tCGhv4c/75csC3Xc2soJWtKPeeGzGEt54bJmIY1aOiPhv7c3mPT0MbxvAD1QBrWoaE/GvqjoT/nhqwptZhDfzT0x7bsz70h5wXU4fwUf/rafYcr0tCmeL18qRaZw7FpeKxCX79ZJNvl7ernrziKPhxLWdDQQZbrgzRvpvoq7ItKCjOXNDzC7m4A2fD+sbNemKmMaHi8oq+mMlVj2RNXS5VyE0aqRt7RM+l4nfvGN6wwt0f5LbaBPpY4Dl2WcBp+QJ+2on9mIt+qLfxpU+lku3MADT8iX+8Xpdbw2SY2U1k/mDS00i317SyuR4PqGt6l4bHKNVzou1sM5ibl3uXeaeiuSLP3txxQ2zgNj2Z2lolO+WxSRs05P+W/k1J/dFT7ylVzTtj7GnooSQgAAAAAAAAAAAAAAAAAAM7DHwsIU9lyhqZAAAAAAElFTkSuQmCC" width="620px">
+      <p>Windows - семейство коммерческих операционных систем (OC) корпорации Microsoft, ориентированных на управление с помощью графического интерфейса. Изначально Windows была всего лишь графической программой-надстройкой для распространённой в 1980-х и 1990-х годах операционной системы MS-DOS. Согласно данным ресурса Net Applications, по состоянию на август 2014 года под управлением операционных систем семейства Windows работает около 88 % персональных компьютеров. Windows работает на платформах x86, x86-64, IA-64 и ARM. Существовали также версии для DEC Alpha, MIPS, PowerPC и SPARC.</p>
+      <p>Первые версии Windows не были полноценными операционными системами, а являлись надстройками над операционной системой DOS и были по сути многофункциональным расширением, добавляющим поддержку новых режимов работы процессора, поддержку многозадачности, обеспечивали стандартизацию интерфейсов аппаратного обеспечения, обмен данными между приложениями и единообразие пользовательских интерфейсов программ. Для создания графического интерфейса использовались встроенные средства GDI и USER. Первые версии Windows вообще состояли из трёх модулей — KERNEL, GDI и USER. Первый из них обеспечивал управление памятью, запуск исполняемых файлов и загрузку динамических библиотек DLL, второй отвечал за графику, третий — за окна. Они работали с процессорами начиная с Intel 8086.</p>
+      <a href="..\720\index.html"button type="button" class="btn btn-secondary">Вернуться в меню</button></a>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+   background-image: url(http://kvd25.ru/wp-content/uploads/2014/11/minimal-gray-to-white-gradient-wallpapers_33797_1920x1080.jpg);
+  }
+p{
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  font-family: 'Solway', serif;
+}
+nav {
+  background-color: #B22222;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-link, .dropdown-item {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav li {
+  padding: 0 18px;
+}
+
+nav li.active, nav li.active:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
